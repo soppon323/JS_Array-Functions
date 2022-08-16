@@ -43,9 +43,9 @@ for (let i = 0; i < names.length; i++){
 let avgNames = sumOfNames/names.length
 console.log(avgNames);
 
-//last element of an array
+//3) last element of an array
 //array[array.length - 1]
-//First element of an array
+//4) First element of an array
 //array[0]
 /**
  * 5.	Create a new array called nameLengths. Write a loop to iterate over
@@ -56,6 +56,7 @@ let nameLengths = names.map(function(element){
     return element.length;
 })
 console.log(nameLengths);
+
 /**
  * 6.	Write a loop to iterate over the nameLengths array and calculate 
  * the sum of all the elements in the array. Print the result to the console
