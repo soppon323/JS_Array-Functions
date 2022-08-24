@@ -51,14 +51,15 @@ for (let i = 0; i < names.length; i++){
     sumOfNames = sumOfNames + names[i].length;
 }
 let avgNames = sumOfNames/names.length
+console.log(sumOfNames)
 console.log(avgNames);
 
-let newString = ""
-for ( let i = 0; i < names.length; i++){
-    newString = newString +" "+ names[i]
+var newString = ""
+for ( let i = (names.length-1); i >= 0; i--){
+    newString = names[i] + " " + newString
 }
-
 console.log(newString)
+console.log(newString.length)
 
 
 //3) last element of an array
