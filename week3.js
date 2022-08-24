@@ -1,3 +1,7 @@
+function linebreak(){
+    console.log("-------------------------------------");
+}
+
 /*
 1.	Create an array called ages that contains the following values: 
 3, 9, 23, 64, 2, 8, 28, 93.
@@ -25,6 +29,12 @@ for(let i = 0; i < ages.length; i++){
 let avgAge = sum/ages.length;
 console.log(avgAge);
 
+
+
+linebreak();
+
+
+
 /**
  * 2.	Create an array called names that contains the following values: 
  * ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
@@ -34,7 +44,7 @@ b.	Use a loop to iterate through the array again and concatenate all the names
 together, separated by spaces, and print the result to the console.
  */
 
-let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 let sumOfNames = 0
 
 for (let i = 0; i < names.length; i++){
@@ -43,19 +53,34 @@ for (let i = 0; i < names.length; i++){
 let avgNames = sumOfNames/names.length
 console.log(avgNames);
 
+let newString = ""
+for ( let i = 0; i < names.length; i++){
+    newString = newString +" "+ names[i]
+}
+
+console.log(newString)
+
+
 //3) last element of an array
 //array[array.length - 1]
+
+linebreak();
 //4) First element of an array
 //array[0]
+linebreak();
 /**
  * 5.	Create a new array called nameLengths. Write a loop to iterate over
  *  the previously created names array and add the length of each name to the 
  * nameLengths array.
  */
-let nameLengths = names.map(function(element){
-    return element.length;
-})
-console.log(nameLengths);
+
+
+let nameLengths = [];
+for( let i = 0; i<names.length; i++){
+    nameLengths.push(names[i].length)
+}
+console.log(nameLengths)
+linebreak();
 
 /**
  * 6.	Write a loop to iterate over the nameLengths array and calculate 
@@ -67,6 +92,8 @@ for(let i = 0; i < nameLengths.length; i++){
     sumOfLengths = sumOfLengths + nameLengths[i];
 }
 console.log(sumOfLengths);
+
+linebreak();
 /**
  * 7.	Write a function that takes two parameters, word and n, as arguments 
  * and returns the word concatenated to itself n number of times. (i.e. if I 
@@ -77,6 +104,8 @@ function word3X(word,n){
     return word.repeat(n)
 }
 console.log(word3X("Nam", 3));
+linebreak();
+
 /**
  * 8.	Write a function that takes two parameters, firstName and lastName, 
  * and returns a full name (the full name should be the first and the last name 
@@ -87,6 +116,8 @@ function fullName(firstName, lastName){
     return firstName + " " + lastName;
 }
 console.log("John", "Smith")
+linebreak();
+
 /**
  * 9.Write a function that takes an array of numbers and returns true if the
  *  sum of all the numbers in the array is greater than 100.
@@ -103,9 +134,11 @@ function sumGreater100(element){
 }
 console.log(sumGreater100([4,5,6,7,80,9]));
 
+linebreak();
+
 /**
- * 10.	Write a function that takes an array of numbers and returns the 
- * average of all the elements in the array
+ * 10.	Write a function that takes an array of numbers 
+ * and returns the average of all the elements in the array
  */
  function avgNumbers(element){
     let sum = 0
@@ -116,6 +149,8 @@ console.log(sumGreater100([4,5,6,7,80,9]));
    return avg;
 }
 console.log(avgNumbers([4,5,6,7,80,9]));
+
+linebreak();
 
 /**
  * 11.	Write a function that takes two arrays of numbers and returns true 
@@ -145,6 +180,8 @@ function arrayComparator(element1, element2){
 
 console.log(arrayComparator([4,5,6,7,8,90],[4,5,6,44,8,9]));
 
+linebreak();
+
 /**
  * 12.	Write a function called willBuyDrink that takes a boolean 
  * isHotOutside, and a number moneyInPocket, and returns true if 
@@ -159,6 +196,7 @@ function willBuyDrink(isHotOutside, moneyInPocket){
 }
 console.log(willBuyDrink(true, 6));
 
+linebreak();
 /**
  * This functions takes yout yearly salary and returns how much house you can
  * comfortably afford. It takes the parameteres yearlySalary, and current 
@@ -171,3 +209,4 @@ function maxHomeLoan(yearlySalary, interestRate){
     return maxLoan
 }
 console.log(maxHomeLoan(77000, 3.0));
+
