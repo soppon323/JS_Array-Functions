@@ -51,7 +51,6 @@ for (let i = 0; i < names.length; i++){
     sumOfNames = sumOfNames + names[i].length;
 }
 let avgNames = sumOfNames/names.length
-console.log(sumOfNames)
 console.log(avgNames);
 
 var newString = ""
@@ -195,11 +194,11 @@ function willBuyDrink(isHotOutside, moneyInPocket){
     } else {
         return false}
 }
-console.log(willBuyDrink(true, 6));
+console.log(willBuyDrink(true, 16));
 
 linebreak();
 /**
- * This functions takes yout yearly salary and returns how much house you can
+ * This functions takes your yearly salary and returns how much house you can
  * comfortably afford. It takes the parameteres yearlySalary, and current 
  * interest rates
  */
